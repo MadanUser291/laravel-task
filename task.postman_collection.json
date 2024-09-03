@@ -157,6 +157,95 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "profile-update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXItbG9naW4iLCJpYXQiOjE3MjUzOTE3MjYsImV4cCI6MTcyNTM5NTMyNiwibmJmIjoxNzI1MzkxNzI2LCJqdGkiOiJHd1pXUnhSNUFBS2FaWG50Iiwic3ViIjoiNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.vNFqCVl2qbIcnCfMLLeJ8V68E-bEn1Ry1yID2wz1sxg"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "u firsttt",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "userr",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9876543212",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jaipur",
+							"type": "text"
+						},
+						{
+							"key": "street",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "788888",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile-update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile-update"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://127.0.0.1:8000/api/profile-update' \\\r\n--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXItbG9naW4iLCJpYXQiOjE3MjUzOTA5ODIsImV4cCI6MTcyNTM5NDU4MiwibmJmIjoxNzI1MzkwOTgyLCJqdGkiOiJ1dUIzQXhvWktORFhFc3p3Iiwic3ViIjoiNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.PonDKEtrrSO6ZrBMz3H1DYA6W3U4nI5ro7qcV1hBM5c' \\\r\n--form 'first_name=\"u first\"' \\\r\n--form 'last_name=\"user\"' \\\r\n--form 'email=\"sahu1512d@gmail.com\"' \\\r\n--form 'phone_number=\"9876543212\"' \\\r\n--form 'gender=\"male\"' \\\r\n--form 'address=\"jaipur\"' \\\r\n--form 'street=\"test\"' \\\r\n--form 'city=\"test\"' \\\r\n--form 'state=\"test\"' \\\r\n--form 'country=\"test\"' \\\r\n--form 'postal_code=\"788888\"'\r\n"
+			},
+			"response": []
 		}
 	]
 }
